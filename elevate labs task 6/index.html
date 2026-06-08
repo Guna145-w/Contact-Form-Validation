@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Contact Us</h1>
+
+    <form id="contactForm">
+
+        <div class="input-group">
+            <label>Name</label>
+            <input type="text" id="name">
+            <small id="nameError"></small>
+        </div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="text" id="email">
+            <small id="emailError"></small>
+        </div>
+
+        <div class="input-group">
+            <label>Message</label>
+            <textarea id="message" rows="5"></textarea>
+            <small id="messageError"></small>
+        </div>
+
+        <div class="button-group">
+    <button type="submit" class="submit-btn">
+        Submit
+    </button>
+
+    <button type="reset" class="reset-btn">
+        Reset
+    </button>
+</div>
+
+        <p id="successMessage"></p>
+
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
